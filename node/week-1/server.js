@@ -2,45 +2,6 @@
  * Exercise 3: Create an HTTP web server
  */
 
-//================================
-// const http = require("http");
-// const fs = require("fs");
-// const PORT = process.env.PORT || 3000;
-// const server = http.createServer((request, response) => {
-//   response.statusCode = 200;
-//   response.setHeader("Content-Type", "text/plain");
-
-//   let path = "./";
-//   switch (request.url) {
-//     case "/":
-//       path += "index.html";
-//       break;
-//     case "/about":
-//       path += "/about.html";
-//       break;
-//     default:
-//       response.setHeader("Location", "/");
-//       res.statusCode = 301;
-//       path += "404.html";
-//       break;
-//   }
-
-//   fs.readFile(path, (err, data) => {
-//     if (err) {
-//       console.error(err);
-//       response.end();
-//     } else {
-//       res.end(data);
-//     }
-//   });
-// });
-// server.listen(PORT,()=>console.log('Server running'))
-// server.listen(PORT, HOSTNAME, () => {
-// 	console.log(`Server running at http://${HOSTNAME}:${PORT}`);
-// });
-
-//================================
-
 const http = require("http");
 const fs = require("fs");
 
