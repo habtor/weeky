@@ -1,0 +1,12 @@
+> CREATE TABLE Recipes(Recipe_id INTEGER PRIMARY KEY, Recipe_name TEXT, category INTEGER);
+> CREATE TABLE Categories(Cat_id INTEGER PRIMARY KEY, Category_name TEXT);
+> CREATE TABLE Steps(Step_id INTEGER PRIMARY KEY, Step_description TEXT);
+> CREATE TABLE Ingredients(Ingredient_id INTEGER PRIMARY KEY, Ingredient_name TEXT);
+
+
+> CREATE TABLE Recipes_Ingredients(Recipe_id INTEGER, Ingredient_id INTEGER);
+> CREATE TABLE Recipes_Steps(Recipe_id INTEGER, Steps_id INTEGER);
+
+
+> SELECT * FROM Recipes;
+> SELECT * FROM Recipes WHERE category = 'sea food';
